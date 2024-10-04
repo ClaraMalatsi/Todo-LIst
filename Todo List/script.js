@@ -75,11 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             renderTasks();
         }
         }
-    /*
-
-   bgColorButton.onclick = () => {
-        document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 75%)`;
-    };*/
+    
 
     showAllButton.onclick = renderTasks;
     showActiveButton.onclick = () => {
@@ -186,20 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.backgroundColor = getRandomColor();
     });
 
-    /*function getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
-    renderTasks();
-});
-*/
-
-// Existing addTask function and other code remains the same
+    
 document.getElementById('addButton').addEventListener('click', addTask);
 
 function addTask() {
